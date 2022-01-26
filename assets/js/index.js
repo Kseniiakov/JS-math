@@ -89,7 +89,7 @@ function calculator(a, op, b) {
     return null;
   }
 
-  if (op!=='+') {
+  if (op !== '+' && op !== '-' && op !== '*' && op !== '/') {
     return null;
   }
 
