@@ -1,37 +1,39 @@
-// const a = prompt ('Введите основание треугольника');
-// const na = Number (a)
-// const h = prompt ('Введите высоту треугольника');
-// const nh = Number (h)
-// alert(1/2*(na*nh));
-
-// const a = prompt ('Введите сторону трапеции');
-// const na = Number (a)
-// const b = prompt ('Введите основание трапеции');
-// const nb = Number (b)
-// const h = prompt ('Введите высоту трапеции');
-// const nh = Number (h)
-// alert(((na*nb)/2)*nh);
-
-// const r = prompt ('Введите радиус круга');
-// const nr = Number (r);
-// const S = Math.PI*nr**2;
+// let a = prompt ('Введите основание треугольника');
+// let na = Number (a)
+// let h = prompt ('Введите высоту треугольника');
+// let nh = Number (h)
+// let S = 1/2*na*nh;
 // alert(S);
 
-// const a = prompt ('Введите основание параллелограммa');
-// const na = Number (a)
-// const h = prompt ('Введите высоту параллелограммa');
-// const nh = Number (h)
-// const S = na*nh
+// let a = prompt ('Введите верхнее основание трапеции');
+// let na = Number (a)
+// let b = prompt ('Введите нижнее основание трапеции');
+// let nb = Number (b)
+// let h = prompt ('Введите высоту трапеции');
+// let nh = Number (h)
+// let S = (((na+nb)/2)*nh);
 // alert(S);
 
-// const r = prompt ('Введите радиус цилиндра');
-// const nr = Number (r);
-// const h = prompt ('Введите высоту цилиндра');
-// const nh = Number (h)
-// const V = Math.PI*nh*nr**2;
+// let r = prompt ('Введите радиус круга');
+// let nr = Number (r);
+// let S = Math.PI*Math.pow(nr, 2);
+// alert(S);
+
+// let a = prompt ('Введите основание параллелограммa');
+// let na = Number (a)
+// let h = prompt ('Введите высоту параллелограммa');
+// let nh = Number (h)
+// let S = na*nh
+// alert(S);
+
+// let r = prompt ('Введите радиус цилиндра');
+// let nr = Number (r);
+// let h = prompt ('Введите высоту цилиндра');
+// let nh = Number (h)
+// let V = Math.PI*Math.pow(nr, 2)*nh;
 // alert(V);
 
-const r = prompt ('Введите радиус сферы');
-const nr = Number (r);
-const V = 4/3*Math.PI*nr**3;
+let r = prompt ('Введите радиус сферы');
+let nr = Number (r);
+let V = 4/3*Math.PI*Math.pow(nr, 3);
 alert(V);
