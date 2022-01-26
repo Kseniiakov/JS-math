@@ -38,12 +38,41 @@
 // let V = 4/3*Math.PI*Math.pow(nr, 3);
 // alert(V);
 
-function sayYourAge () {
-  const num = prompt('Укажите ваш возраст');
+// function sayYourAge () {
+//   const num = prompt('Укажите ваш возраст');
 
-  return num;
+//   return num;
+// }
+
+// const result = sayYourAge();
+
+// console.log (result);
+
+// const a = prompt ('Введите верхнее основание трапеции');
+// const b = prompt ('Введите нижнее основание трапеции');
+// const h = prompt ('Введите высоту трапеции');
+
+// function trapezoidArea(num1, num2, num3) {
+//   return (Number (num1)+ Number(num2))/2*Number(num3);
+// }
+
+// const result = trapezoidArea(a, b, h);
+// console.log (result);
+
+// 2
+
+const a = prompt ('Введите верхнее основание трапеции');
+const b = prompt ('Введите нижнее основание трапеции');
+const h = prompt ('Введите высоту трапеции');
+
+function trapezoidArea(num1, num2, num3) {
+  const prepA = Number(num1);
+  const prepB = Number(num2);
+  const prepH = Number(num3);
+
+  return (prepA + prepB)/2 * prepH;
 }
 
-const result = sayYourAge();
+const result = trapezoidArea(a, b, h);
 
 console.log (result);
