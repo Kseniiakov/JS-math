@@ -33,7 +33,17 @@
 // let V = Math.PI*Math.pow(nr, 2)*nh;
 // alert(V);
 
-let r = prompt ('Введите радиус сферы');
-let nr = Number (r);
-let V = 4/3*Math.PI*Math.pow(nr, 3);
-alert(V);
+// let r = prompt ('Введите радиус сферы');
+// let nr = Number (r);
+// let V = 4/3*Math.PI*Math.pow(nr, 3);
+// alert(V);
+
+function sayYourAge () {
+  const num = prompt('Укажите ваш возраст');
+
+  return num;
+}
+
+const result = sayYourAge();
+
+console.log (result);
