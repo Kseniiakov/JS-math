@@ -61,18 +61,55 @@
 
 // 2
 
-const a = prompt ('Введите верхнее основание трапеции');
-const b = prompt ('Введите нижнее основание трапеции');
-const h = prompt ('Введите высоту трапеции');
+// const a = prompt ('Введите верхнее основание трапеции');
+// const b = prompt ('Введите нижнее основание трапеции');
+// const h = prompt ('Введите высоту трапеции');
 
-function trapezoidArea(num1, num2, num3) {
-  const prepA = Number(num1);
-  const prepB = Number(num2);
-  const prepH = Number(num3);
+// function trapezoidArea(num1, num2, num3) {
+//   const prepA = Number(num1);
+//   const prepB = Number(num2);
+//   const prepH = Number(num3);
 
-  return (prepA + prepB)/2 * prepH;
+//   return (prepA + prepB)/2 * prepH;
+// }
+
+// const result = trapezoidArea(a, b, h);
+
+// console.log (result);
+
+// calculator/////////////////////////////////////
+
+const num1 = Number( prompt('Напишите число'));
+const operator = prompt('Напишите Действие');
+const num2 = Number( prompt('Напишите число'));
+
+function calculator(a, op, b) {
+
+  if (isNaN(a) || isNaN(b)) {
+    return null;
+  }
+
+  // if (op !== '+' || op !== '-' || op !== '*' || op !== '/') {
+  //   return null;
+  // }
+
+  if (op === '+') {
+    return a + b;
+  }
+
+  if (op === '-') {
+    return a - b;
+  }
+
+  if (op === '*') {
+    return a * b;
+  }
+
+  if (op === '/') {
+    return a / b;
+  }
+
+  return null;
 }
-
-const result = trapezoidArea(a, b, h);
-
-console.log (result);
+const result = calculator(num1, operator, num2);
+alert(result);
