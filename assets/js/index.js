@@ -89,9 +89,11 @@ function calculator(a, op, b) {
     return null;
   }
 
-  // if (op !== '+' || op !== '-' || op !== '*' || op !== '/') {
-  //   return null;
-  // }
+  if (op!=='+') {
+    return null;
+  }
+
+  console.log('test');
 
   if (op === '+') {
     return a + b;
